@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-area container">
+        <div class="logo-area">
+            <img src="FINAL LOGO1.png" alt="logo-image" id="logo-image">
+            <div class="website-name">
+                <h1>FLASHY TYPE</h1>
+            </div>
+        </div>
+        <div class="customization-area container">
+            <a href="#" id="punctuation" class="normal"onclick="updatepunctuationflag()">@ punctuation</a><span>&nbsp;</span>
+            <a href="#" id="number" class="normal" onclick="updatenumberflag()" ># number</a><span>&nbsp;</span>
+            <span class="divider">|</span>
+            <a href="#" class="custom time normal selected" id="modification1" onclick="modification(1)" >⌚ time&nbsp;&nbsp;</a>
+            <a href="#" class="custom words normal" id="modification2" onclick="modification(2)">A words&nbsp;&nbsp;</a>
+            <a href="#" class="custom quotes normal" id="modification3" onclick="modification(3)">"" quote&nbsp;&nbsp;</a>
+            <a href="#" class="custom quotes normal" id="modification4" onclick="modification(4)">themes&nbsp;&nbsp;</a>
+            <span class="divider">|</span>
+            <a href="#" id="sec1" class="normal"onclick="handletime(15)">15</a><span>&nbsp;</span>
+            <a href="#" id="sec2"class="selected" onclick="handletime(30)">30</a><span>&nbsp;</span>
+            <a href="#" id="sec3" class="normal"onclick="handletime(60)">60</a><span>&nbsp;</span>
+            <a href="#" id="sec4"class="normal"onclick="handletime(120)">120</a><span></span>
+        </div>
+
+        <div class="text-area">
+            <audio id="keyboard-sound" src="click-flip-switch_GyG2GvVd_NWM.mp3" preload="auto"></audio>
+            <input type="text" class = "input-field" id = "input-field" autofocus type="text" class="input-field" autocapitalize="false" autocomplete="false" spellcheck="false" >
+            <div class="countdown"><span><b id="countdown">30</b></span></div>
+            <p class="text-content" >
+                
+                <p class="text-content" id = "text-content">
+                    text over here  
+                </p>
+
+                <div class="reset"><button type="button" value="start" id="myButton" onclick="handleClick()">start</button></div>
+            </p>
+        </div>
+        <div class="footer">
+            <div class="restart">
+                <span class="box">tab</span><span style="color: #646669;">+</span><span class="box">enter</span><span style="color: #646669;">- restart test</span>
+            </div>
+            <div >
+                <a href="https://github.com/viramhh98" class="contact-links">&lt;/&gt;Github</a>
+                <span>&nbsp;&nbsp;</span>
+                <a href="https://www.linkedin.com/in/viram-shah-5a2409254/" class="contact-links">Linkdin</a>     
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
